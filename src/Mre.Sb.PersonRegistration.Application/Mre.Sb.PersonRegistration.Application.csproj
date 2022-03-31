@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Mre.Sb.PersonRegistration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Mre.Sb.Geographical" Version="0.2.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.4.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.4.3" />
+    <PackageReference Include="Volo.Abp.IdentityModel" Version="4.4.3" /> 
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain" Version="4.4.3" />
+    <ProjectReference Include="..\Mre.Sb.Notification.HttpApi.Client\Mre.Sb.Notification.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\Mre.Sb.PersonRegistration.Application.Contracts\Mre.Sb.PersonRegistration.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Mre.Sb.PersonRegistration.Domain\Mre.Sb.PersonRegistration.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Geographical\" />
+  </ItemGroup>
+
+</Project>

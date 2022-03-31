@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Mre.Sb.PersonRegistration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Mre.Sb.PersonRegistration.Application\Mre.Sb.PersonRegistration.Application.csproj" />
+    <ProjectReference Include="..\Mre.Sb.PersonRegistration.Domain.Tests\Mre.Sb.PersonRegistration.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+  </ItemGroup>
+
+</Project>

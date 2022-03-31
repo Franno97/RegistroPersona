@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Mre.Sb.PersonRegistration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.4.3" />
+    <PackageReference Include="Volo.Abp.IdentityModel" Version="4.4.3" />
+    <ProjectReference Include="..\Mre.Sb.Notification.HttpApi.Client\Mre.Sb.Notification.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\Mre.Sb.PersonRegistration.Application.Contracts\Mre.Sb.PersonRegistration.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
